@@ -24,10 +24,13 @@ public extension WWOrderedSet {
     /// - Returns: Element
     subscript(index: Int) -> Element { object(at: index) }
     
-    /// 安全取得內容元素值 => orderedSet[save: 0]
+    /// 安全取得內容元素值 => orderedSet[safe: 0]
     /// - Parameter index: Int
     /// - Returns: Element?
-    subscript(save index: Int) -> Element? { (count > index) ? nil : object(at: index) }
+    subscript(safe index: Int) -> Element? {
+        if (index < 0) { return nil }
+        return (index < count) ? object(at: index) : nil
+    }
 }
 
 // MARK: - 公開函數
