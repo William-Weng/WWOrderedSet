@@ -1,0 +1,15 @@
+{
+  "originHash" : "2c77db14ad180447f119b1ebf3948af8a8cba6ac2c30a8dd00a61a907459cde0",
+  "pins" : [
+    {
+      "identity" : "wworderedset",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWOrderedSet",
+      "state" : {
+        "revision" : "8feff3c6fa4891faa462f4c573570e307a5f4b2d",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
