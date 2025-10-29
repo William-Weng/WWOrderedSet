@@ -28,7 +28,7 @@ dependencies: [
 |add(_:)|增加內容元素|
 |remove(_:)|刪除內容元素|
 |remove(at:)|刪除某個位置的內容元素|
-|removeAll(_:)|移除所有元素|
+|removeAll()|移除所有元素|
 |object(at:)|取得某個元素|
 |firstObject()|取得第一個元素|
 |lastObject()|取得最後一個元素|
