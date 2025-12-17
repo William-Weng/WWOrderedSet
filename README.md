@@ -10,7 +10,7 @@
 ### [Installation with Swift Package Manager](https://medium.com/彼得潘的-swift-ios-app-開發問題解答集/使用-spm-安裝第三方套件-xcode-11-新功能-2c4ffcf85b4b)
 ```bash
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWOrderedSet.git", .upToNextMajor(from: "1.0.1"))
+    .package(url: "https://github.com/William-Weng/WWOrderedSet.git", .upToNextMajor(from: "1.0.2"))
 ]
 ```
 
@@ -21,6 +21,8 @@ dependencies: [
 |array|元素陣列 (直接複製)|
 |first|第一個元素|
 |last|最後一個元素|
+|popFirst|彈出第一個元素|
+|popLast|彈出最後一個元素|
 
 ### 可用函式 (Function)
 |函式|功能|
@@ -30,8 +32,6 @@ dependencies: [
 |remove(at:)|刪除某個位置的內容元素|
 |removeAll()|移除所有元素|
 |object(at:)|取得某個元素|
-|firstObject()|取得第一個元素|
-|lastObject()|取得最後一個元素|
 |contains(_:)|是否有包含該元素|
 |index(of:)|尋找元素在哪個位置|
 

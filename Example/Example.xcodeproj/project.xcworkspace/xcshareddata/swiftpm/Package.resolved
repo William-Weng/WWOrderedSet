@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWOrderedSet",
       "state" : {
-        "revision" : "8feff3c6fa4891faa462f4c573570e307a5f4b2d",
-        "version" : "1.0.0"
+        "revision" : "66bfe2ce0fcd2a7834d6ecdd3e54ccc9b574403e",
+        "version" : "1.0.1"
       }
     }
   ],

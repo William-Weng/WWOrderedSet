@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81280DBC2EF28C5F000E7AF5 /* WWOrderedSet in Frameworks */ = {isa = PBXBuildFile; productRef = 81280DBB2EF28C5F000E7AF5 /* WWOrderedSet */; };
+		81280DBF2EF28E13000E7AF5 /* WWOrderedSet in Frameworks */ = {isa = PBXBuildFile; productRef = 81280DBE2EF28E13000E7AF5 /* WWOrderedSet */; };
 		814AB8F32EA8B43D00837B8D /* WWOrderedSet in Frameworks */ = {isa = PBXBuildFile; productRef = 814AB8F22EA8B43D00837B8D /* WWOrderedSet */; };
 		814AB9182EA8DCC600837B8D /* WWOrderedSet in Frameworks */ = {isa = PBXBuildFile; productRef = 814AB9172EA8DCC600837B8D /* WWOrderedSet */; };
-		814AB91B2EA8DFB200837B8D /* WWOrderedSet in Frameworks */ = {isa = PBXBuildFile; productRef = 814AB91A2EA8DFB200837B8D /* WWOrderedSet */; };
 		817239002EA8AC8F00945516 /* WWOrderedSet in Frameworks */ = {isa = PBXBuildFile; productRef = 817238FF2EA8AC8F00945516 /* WWOrderedSet */; };
 		817567FC2CA2C2B400B24577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FB2CA2C2B400B24577 /* AppDelegate.swift */; };
 		817568002CA2C2B400B24577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FF2CA2C2B400B24577 /* ViewController.swift */; };
@@ -36,7 +37,8 @@
 				814AB9182EA8DCC600837B8D /* WWOrderedSet in Frameworks */,
 				817239002EA8AC8F00945516 /* WWOrderedSet in Frameworks */,
 				814AB8F32EA8B43D00837B8D /* WWOrderedSet in Frameworks */,
-				814AB91B2EA8DFB200837B8D /* WWOrderedSet in Frameworks */,
+				81280DBC2EF28C5F000E7AF5 /* WWOrderedSet in Frameworks */,
+				81280DBF2EF28E13000E7AF5 /* WWOrderedSet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +126,8 @@
 				817238FF2EA8AC8F00945516 /* WWOrderedSet */,
 				814AB8F22EA8B43D00837B8D /* WWOrderedSet */,
 				814AB9172EA8DCC600837B8D /* WWOrderedSet */,
-				814AB91A2EA8DFB200837B8D /* WWOrderedSet */,
+				81280DBB2EF28C5F000E7AF5 /* WWOrderedSet */,
+				81280DBE2EF28E13000E7AF5 /* WWOrderedSet */,
 			);
 			productName = Example;
 			productReference = 817567F82CA2C2B400B24577 /* Example.app */;
@@ -155,7 +158,7 @@
 			);
 			mainGroup = 817567EF2CA2C2B400B24577;
 			packageReferences = (
-				814AB9192EA8DFB200837B8D /* XCRemoteSwiftPackageReference "WWOrderedSet" */,
+				81280DBD2EF28E13000E7AF5 /* XCRemoteSwiftPackageReference "WWOrderedSet" */,
 			);
 			productRefGroup = 817567F92CA2C2B400B24577 /* Products */;
 			projectDirPath = "";
@@ -420,28 +423,32 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		814AB9192EA8DFB200837B8D /* XCRemoteSwiftPackageReference "WWOrderedSet" */ = {
+		81280DBD2EF28E13000E7AF5 /* XCRemoteSwiftPackageReference "WWOrderedSet" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWOrderedSet";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
+				minimumVersion = 1.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		81280DBB2EF28C5F000E7AF5 /* WWOrderedSet */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WWOrderedSet;
+		};
+		81280DBE2EF28E13000E7AF5 /* WWOrderedSet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81280DBD2EF28E13000E7AF5 /* XCRemoteSwiftPackageReference "WWOrderedSet" */;
+			productName = WWOrderedSet;
+		};
 		814AB8F22EA8B43D00837B8D /* WWOrderedSet */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WWOrderedSet;
 		};
 		814AB9172EA8DCC600837B8D /* WWOrderedSet */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = WWOrderedSet;
-		};
-		814AB91A2EA8DFB200837B8D /* WWOrderedSet */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 814AB9192EA8DFB200837B8D /* XCRemoteSwiftPackageReference "WWOrderedSet" */;
 			productName = WWOrderedSet;
 		};
 		817238FF2EA8AC8F00945516 /* WWOrderedSet */ = {

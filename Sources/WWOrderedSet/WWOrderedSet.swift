@@ -14,6 +14,8 @@ public struct WWOrderedSet<Element: Hashable> {
     public var array: [Element] { orderedSet.array as? [Element] ?? [] }    /// 元素陣列 (直接複製)
     public var first: Element? { firstObject() }                            /// 第一個元素
     public var last: Element? { lastObject() }                              /// 最後一個元素
+    public var popFirst: Element? { popFirstObject() }                      /// 彈出第一個元素
+    public var popLast: Element? { popLastObject() }                        /// 彈出最後一個元素
 }
 
 // MARK: - 公開函數
@@ -78,18 +80,6 @@ public extension WWOrderedSet {
         return orderedSet.object(at: index) as! Element
     }
     
-    /// 取得第一個元素
-    /// - Returns: Element?
-    func firstObject() -> Element? {
-        return orderedSet.firstObject as! Element?
-    }
-    
-    /// 取得最後一個元素
-    /// - Returns: Element
-    func lastObject() -> Element? {
-        return orderedSet.lastObject as! Element?
-    }
-    
     /// 是否有包含該元素
     /// - Parameter element: Element
     /// - Returns: Bool
@@ -103,5 +93,41 @@ public extension WWOrderedSet {
     func index(of object: Element) -> Int? {
         let index = orderedSet.index(of: object)
         return (index != NSNotFound) ? index : nil
+    }
+}
+
+// MARK: - 小工具
+private extension WWOrderedSet {
+    
+    /// 取得第一個元素
+    /// - Returns: Element?
+    func firstObject() -> Element? {
+        return orderedSet.firstObject as! Element?
+    }
+    
+    /// 取得最後一個元素
+    /// - Returns: Element
+    func lastObject() -> Element? {
+        return orderedSet.lastObject as! Element?
+    }
+    
+    /// 彈出第一個元素
+    /// - Returns: Element?
+    func popFirstObject() -> Element? {
+        
+        guard let element = firstObject() else { return nil }
+        
+        remove(element)
+        return element
+    }
+    
+    /// 彈出最後一個元素
+    /// - Returns: Element?
+    func popLastObject() -> Element? {
+        
+        guard let element = lastObject() else { return nil }
+        
+        remove(element)
+        return element
     }
 }

@@ -23,8 +23,6 @@ final class ViewController: UIViewController {
         orderedSet.add("156")
         orderedSet.add("386")
         
-        print(orderedSet)
-        
         orderedSet.remove("251")
         
         print(orderedSet.array)
